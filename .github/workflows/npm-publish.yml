@@ -1,4 +1,4 @@
-name: Zcn Release
+name: Zod Toolkit [Release]
 
 on:
   release:
