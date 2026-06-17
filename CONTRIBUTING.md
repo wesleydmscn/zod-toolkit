@@ -1,6 +1,6 @@
-# Contributing to zcn/zod
+# Contributing to Zod Toolkit
 
-First off, thank you for considering contributing to **zcn**! 🎉
+First off, thank you for considering contributing to **zod-toolkit**! 🎉
 Whether it's fixing bugs, adding new validations, improving documentation, or enhancing tests, your contributions are highly valued.
 
 ## Getting Started
@@ -13,8 +13,8 @@ Before starting work, please **open an issue** describing what you want to imple
 2. **Clone your fork**:
 
    ```bash
-   git clone git@github.com:wesleydmscn/zcn.git
-   cd zcn
+   git clone git@github.com:wesleydmscn/zod-toolkit.git
+   cd zod-toolkit
    ```
 3. **Install dependencies**:
 
