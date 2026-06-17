@@ -1,7 +1,7 @@
 {
-  "name": "zcn",
-  "version": "1.1.4",
-  "description": "A set of ready-made schemas extended for Zod.",
+  "name": "zod-toolkit",
+  "version": "0.0.1",
+  "description": "Ship production-ready schemas with Zod Toolkit",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -11,9 +11,10 @@
   ],
   "scripts": {
     "build": "tsup",
-    "prettier": "prettier . --write",
     "test": "vitest run",
     "test:watch": "vitest",
+    "prettier": "prettier . --write",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky",
     "prepublishOnly": "npm run build"
   },
@@ -22,22 +23,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wesleydmscn/zcn.git"
+    "url": "git+https://github.com/wesleydmscn/zod-toolkit.git"
   },
   "keywords": [
     "schema-validation",
     "type-inference",
     "runtime-validation",
     "zod",
-    "zcn",
     "typescript"
   ],
   "author": "Wesley Damasceno",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wesleydmscn/zcn/issues"
+    "url": "https://github.com/wesleydmscn/zod-toolkit/issues"
   },
-  "homepage": "https://github.com/wesleydmscn/zcn#readme",
+  "homepage": "https://github.com/wesleydmscn/zod-toolkit#readme",
   "dependencies": {
     "zod": "^4.1.12"
   },
