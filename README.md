@@ -2,7 +2,7 @@
 
 # Zod Toolkit (Coming soon)
 
-Ship production-ready schemas with Zod Toolkit. 🚀
+Stop rewriting validators. Ship production-ready schemas with Zod Toolkit. 🚀
 
 ## Features
 
