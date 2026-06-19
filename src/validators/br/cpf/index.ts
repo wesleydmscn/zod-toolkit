@@ -1,5 +1,8 @@
 import { z } from "zod";
 
+import type { _Params } from "@/types";
+import { defaultParams } from "./locale";
+
 function isValidCPF(value: string): boolean {
   const regex = /^(\d{11}|\d{3}\.\d{3}\.\d{3}-\d{2})$/;
   if (!regex.test(value)) return false;
@@ -27,5 +30,5 @@ function isValidCPF(value: string): boolean {
   );
 }
 
-export const cpf = (params?: $ZcnValidationParams) =>
+export const cpf = (params: _Params = defaultParams) =>
   z.string().refine(isValidCPF, params);

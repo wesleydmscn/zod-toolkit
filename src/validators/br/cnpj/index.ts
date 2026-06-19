@@ -1,5 +1,8 @@
 import { z } from "zod";
 
+import type { _Params } from "@/types";
+import { defaultParams } from "./locale";
+
 function isValidCNPJ(value: string): boolean {
   const regex = /^(\d{14}|\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2})$/;
   if (!regex.test(value)) return false;
@@ -32,5 +35,5 @@ function isValidCNPJ(value: string): boolean {
   );
 }
 
-export const cnpj = (params?: $ZcnValidationParams) =>
+export const cnpj = (params: _Params = defaultParams) =>
   z.string().refine(isValidCNPJ, params);

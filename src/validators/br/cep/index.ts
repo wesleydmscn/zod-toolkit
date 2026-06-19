@@ -1,5 +1,8 @@
 import { z } from "zod";
 
+import type { _Params } from "@/types";
+import { defaultParams } from "./locale";
+
 function isValidCEP(value: string): boolean {
   const cep = value.replace(/\D/g, "");
 
@@ -12,8 +15,7 @@ function isValidCEP(value: string): boolean {
   return true;
 }
 
-export const cep = (params?: $ZcnValidationParams) =>
+export const cep = (params: _Params = defaultParams) =>
   z
     .string()
-    .regex(/^\d{5}-?\d{3}$/, params)
-    .refine(isValidCEP, params);
+    .refine((val) => /^\d{5}-?\d{3}$/.test(val) && isValidCEP(val), params);
