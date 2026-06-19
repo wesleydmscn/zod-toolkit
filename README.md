@@ -1,6 +1,6 @@
 <img width="160" height="160" alt="image" src=".github/assets/zod-toolkit.png" />
 
-# Zod Toolkit (Coming soon)
+# Zod Toolkit
 
 Stop rewriting validators. Ship production-ready schemas with Zod Toolkit. 🚀
 
