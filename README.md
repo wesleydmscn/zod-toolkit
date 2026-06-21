@@ -13,6 +13,41 @@ Stop rewriting validators. Ship production-ready schemas with Zod Toolkit. 🚀
 
 Built to enhance [Zod](https://zod.dev/) standard validations, `zod-toolkit` integrates seamlessly into your projects the same way you’d use Zod.
 
+## Installation
+
+```bash
+npm install zod-toolkit
+```
+
+```bash
+yarn add zod-toolkit
+```
+
+```bash
+pnpm add zod-toolkit
+```
+
+## Available schemas
+
+### Global
+
+| Schema | Usage | Description |
+|--------|-------|-------------|
+| `username` | `z.username()` | Validates usernames (3–20 chars, alphanumeric with `.` and `_`) |
+| `otp` | `z.otp(length?)` | Validates one-time passwords with a given digit length (default: 6) |
+| `nodeEnv` | `z.nodeEnv()` | Validates Node.js environment (`production`, `development`, `test`, `staging`) |
+| `port` | `z.port()` | Validates port numbers as string (0–65535) |
+| `portNumber` | `z.portNumber()` | Validates and coerces port numbers as number (0–65535) |
+| `fullname` | `z.fullname()` | Validates full names (first and last name required, no numbers) |
+
+### Brazil (`z.br`)
+
+| Schema | Usage | Description |
+|--------|-------|-------------|
+| `cpf` | `z.br.cpf()` | Validates CPF numbers (`000.000.000-00` or `00000000000`) |
+| `cnpj` | `z.br.cnpj()` | Validates CNPJ numbers (`00.000.000/0000-00` or `00000000000000`) |
+| `cep` | `z.br.cep()` | Validates CEP postal codes (`00000-000` or `00000000`) |
+
 ## Basic usage
 
 You just need to define a schema and use custom validations. For the purposes of this guide, we'll use a simple object schema:
