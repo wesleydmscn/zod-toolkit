@@ -33,12 +33,17 @@ pnpm add zod-toolkit
 
 | Schema | Usage | Description |
 |--------|-------|-------------|
+| `fullname` | `z.fullname()` | Validates full names (first and last name required, no numbers) |
 | `username` | `z.username()` | Validates usernames (3–20 chars, alphanumeric with `.` and `_`) |
 | `otp` | `z.otp(length?)` | Validates one-time passwords with a given digit length (default: 6) |
 | `nodeEnv` | `z.nodeEnv()` | Validates Node.js environment (`production`, `development`, `test`, `staging`) |
 | `port` | `z.port()` | Validates port numbers as string (0–65535) |
-| `portNumber` | `z.portNumber()` | Validates and coerces port numbers as number (0–65535) |
-| `fullname` | `z.fullname()` | Validates full names (first and last name required, no numbers) |
+
+### Coerce
+
+| Schema | Usage | Description |
+|--------|-------|-------------|
+| `port` | `z.coerce.port()` | Validates and coerces port numbers as number (0–65535) |
 
 ### Brazil (`z.br`)
 
