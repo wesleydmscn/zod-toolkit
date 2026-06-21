@@ -1,6 +1,6 @@
 {
   "name": "zod-toolkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stop rewriting validators. Ship production-ready schemas with Zod Toolkit",
   "type": "module",
   "main": "./dist/index.js",
